@@ -9,9 +9,9 @@ const data = {
 
 const App = () =>  
     <div>
-        <HeaderBar data={data.footerMsg} />
+        <HeaderBar data={data.headerMsg} />
         <h1>Hello!</h1>
-        <FooterBar data={data.headerMsg}/>
+        <FooterBar data={data.footerMsg}/>
     </div>
 
 export default App;
