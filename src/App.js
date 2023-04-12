@@ -9,8 +9,7 @@ const data = {
 
 const App = () =>  
     <div>
-        <HeaderBar data={data.headerMsg} />
-        <h1>Hello!</h1>
+        <HeaderBar data={data.headerMsg}/>
         <FooterBar data={data.footerMsg}/>
     </div>
 
