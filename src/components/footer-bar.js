@@ -6,4 +6,4 @@ const FooterBar = ({data}) =>
         <p>{data}</p>
     </div>
 
-export default FooterBar
+export default FooterBar;
