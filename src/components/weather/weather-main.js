@@ -1,7 +1,6 @@
 import react, { useEffect, useState } from "react"
 import CityData from "./city-data"
 
-const API_KEY1 = "622c308d808b1628c68060eeaf37c12d"
 const API_KEY = process.env.REACT_APP_API_ID
 
 
