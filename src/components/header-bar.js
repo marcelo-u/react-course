@@ -6,4 +6,4 @@ const HeaderBar = ({data}) =>
         <p>{data}</p>
     </div>
 
-export default HeaderBar
+export default HeaderBar;
