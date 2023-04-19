@@ -1,12 +1,12 @@
 import react, { useEffect, useState } from "react"
-import CityData from "./city-data"
+import CityData from "./CityData"
 
 const API_KEY = process.env.REACT_APP_API_ID
 
 
 const WeatherMain = () => {
-    let [data, setData] = useState(null);
-    let [city, setCity] = useState(null);
+    const [data, setData] = useState(null);
+    const [city, setCity] = useState(null);
 
     useEffect(() => {
         async function fetchData(city) {
@@ -19,20 +19,21 @@ const WeatherMain = () => {
                 console.log("Error " + err)
             }
         }
-        fetchData("London")
-    }, [city])
+        fetchData(city)
+    }, [])
 
-    return (<body>
+    console.log(city + " <---- CITY ")
+
+    return (<>
                 <h1>WeatherMain</h1>
                 <section>
-                    <form ref="form">
+                    <form>
                         <label>Enter City: 
-                            <input type="text" name="cityname"/>
+                            <input type="text" name="cityname" onChange={(e) => setCity(e.target.value)}/>
                         </label>
-                        <input type="submit" value="Submit"/>
                     </form>
                 </section>
-                {data ? (<CityData data={data}/>) : (<div>Data not found</div>)}
-            </body>)
+                {data && (<CityData data={data}/>)}
+            </>)
 }
 export default WeatherMain;

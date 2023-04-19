@@ -1,7 +1,7 @@
 import react from "react";
-import FooterBar from "./components/footer-bar";
-import HeaderBar from "./components/header-bar";
-import WeatherMain from "./components/weather/weather-main";
+import FooterBar from "./components/FooterBar";
+import HeaderBar from "./components/HeaderBar";
+import WeatherMain from "./components/weather/WeatherMain";
 
 
 const data = {
