@@ -1,9 +1,10 @@
 import react from "react";
-import "../styles/footer-bar.css"
+import { FooterBarStyled, PStyled } from "../styles/footerBar.styled";
 
-const FooterBar = ({data}) => 
-    <div className="footer-bar">
-        <p>{data}</p>
-    </div>
+const FooterBar = ({ data }) => (
+  <FooterBarStyled>
+    <PStyled>{data}</PStyled>
+  </FooterBarStyled>
+);
 
 export default FooterBar;

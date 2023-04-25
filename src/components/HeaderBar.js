@@ -1,9 +1,10 @@
 import react from "react";
-import "../styles/header-bar.css"
+import { HeaderBarStyled } from "../styles/headerBar.styled";
 
-const HeaderBar = ({data}) => 
-    <div className="header-bar">
-        <p>{data}</p>
-    </div>
+const HeaderBar = ({ data }) => (
+  <HeaderBarStyled>
+    <p>{data}</p>
+  </HeaderBarStyled>
+);
 
 export default HeaderBar;
